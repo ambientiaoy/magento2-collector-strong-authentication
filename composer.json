@@ -1,0 +1,21 @@
+{
+    "name": "ambientia/collector-strong-authentication",
+    "description": "This module adds Strong authentication to Customweb_CollectorCw module.",
+    "require": {
+        "magento/framework": "101.0.*",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "type": "magento2-module",
+    "version": "1.1.1",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ambientia\\CollectorStrongAuthentication\\": ""
+        }
+    }
+}

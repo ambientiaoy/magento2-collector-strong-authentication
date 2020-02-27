@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="collectorcw">
+            <group id="strong_authentication" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="25"
+                   translate="label">
+                <label><![CDATA[Strong Authentication ]]></label>
+				<field id="active" showInDefault="1" showInStore="0" showInWebsite="1" sortOrder="0" translate="label" type="select">
+					<label><![CDATA[Enabled]]></label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+                <field id="test_client_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20"
+                       translate="label comment" type="text">
+                    <label><![CDATA[Identity Provider Client ID (Test)]]></label>
+                    <comment><![CDATA[Test client id for authentication service. Is
+							supplied by Collector.
+						]]></comment>
+                </field>
+                <field id="test_client_secret" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30"
+                       translate="label comment" type="text">
+                    <label><![CDATA[Identity Provider Client Secret (Test)]]></label>
+                    <comment><![CDATA[Test client secret for authentication service. Is
+							supplied by Collector.
+						]]></comment>
+                </field>
+                <field id="live_client_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="40"
+                       translate="label comment" type="text">
+                    <label><![CDATA[Identity Provider Client ID (Live)]]></label>
+                    <comment><![CDATA[Client id for authentication service. Is
+							supplied by Collector.
+						]]></comment>
+                </field>
+                <field id="live_client_secret" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="50"
+                       translate="label comment" type="text">
+                    <label><![CDATA[Identity Provider Client Secret (Live)]]></label>
+                    <comment><![CDATA[Client secret for authentication service. Is
+							supplied by Collector.
+						]]></comment>
+                </field>
+                <field id="debug" showInDefault="1" showInStore="0" showInWebsite="1" sortOrder="60" translate="label" type="select">
+                    <label><![CDATA[Debug]]></label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <collectorcw>
+            <strong_authentication>
+                <active>0</active>
+                <test_client_id/>
+                <test_client_secret/>
+                <test_client_uri>https://idp-uat.collectorbank.se/</test_client_uri>
+                <live_client_id/>
+                <live_client_secret/>
+                <live_client_uri>https://idp.collectorbank.se/</live_client_uri>
+                <debug>0</debug>
+            </strong_authentication>
+        </collectorcw>
+    </default>
+</config>
