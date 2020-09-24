@@ -18,9 +18,12 @@
                                                                 <item name="collectorcw-payments" xsi:type="array">
                                                                     <item name="component" xsi:type="string">Ambientia_CollectorStrongAuthentication/js/view/payment/collectorcw-payments</item>
                                                                     <item name="methods" xsi:type="array">
-                                                                    	<item name="collectorcw_collectordirect" xsi:type="array">
-                                                                    		<item name="isBillingAddressRequired" xsi:type="boolean">true</item>
-                                                                    	</item>
+                                                                        <item name="collectorcw_collectordirect" xsi:type="array">
+                                                                            <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+                                                                        </item>
+                                                                        <item name="collectorcw_collectorinstallment" xsi:type="array">
+                                                                            <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+                                                                        </item>
                                                                     </item>
                                                                 </item>
                                                             </item>

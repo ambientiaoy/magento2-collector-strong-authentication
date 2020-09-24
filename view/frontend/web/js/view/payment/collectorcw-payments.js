@@ -11,6 +11,10 @@ define([
         {
             type: 'collectorcw_collectordirect',
             component: 'Ambientia_CollectorStrongAuthentication/js/view/payment/method-renderer/collectorcw_collectordirect-method'
+        },
+        {
+            type: 'collectorcw_collectorinstallment',
+            component: 'Ambientia_CollectorStrongAuthentication/js/view/payment/method-renderer/collectorcw_collectorinstallment-method'
         }
     );
     return Component.extend({});
