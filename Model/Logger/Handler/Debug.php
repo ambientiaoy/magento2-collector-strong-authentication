@@ -22,7 +22,7 @@ class Debug extends BaseHandler
      * @param null $fileName
      * @param Config $config
      */
-    public function __construct(DriverInterface $filesystem, $filePath = null, $fileName = null, Config $config)
+    public function __construct(DriverInterface $filesystem, Config $config, $filePath = null, $fileName = null)
     {
         parent::__construct($filesystem, $filePath, $fileName);
         $this->config = $config;
@@ -34,7 +34,7 @@ class Debug extends BaseHandler
     /**
      * @param array $record
      */
-    public function write(array $record)
+    public function write(array $record): void
     {
         if ($this->config->getDebug()) {
             parent::write($record);
