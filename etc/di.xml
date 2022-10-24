@@ -9,6 +9,10 @@
         <plugin name="SetValidationRules"
                 type="Ambientia\CollectorStrongAuthentication\Plugin\Model\Payment\Method\CollectorDirect" />
     </type>
+    <type name="Customweb\CollectorCw\Model\Payment\Method\CollectorInstallment">
+        <plugin name="SetValidationRules"
+                type="Ambientia\CollectorStrongAuthentication\Plugin\Model\Payment\Method\CollectorInstallment" />
+    </type>
     <type name="Customweb\CollectorCw\Model\Authorization\Method\Server">
         <plugin name="RemoveSsnFieldFromCheckoutForm"
                 type="Ambientia\CollectorStrongAuthentication\Plugin\Model\Authorization\Method\Server" />
